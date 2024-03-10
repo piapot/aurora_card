@@ -1,0 +1,24 @@
+name: aurora_card
+description: "A card-based sharing tool."
+publish_to: 'none'
+version: 0.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_tailwind_colors: ^0.0.2
+  get: ^4.6.6
+  styled_widget: ^0.4.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
+
+get_cli:
+  separator: "."
