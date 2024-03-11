@@ -9,7 +9,7 @@ class UnknownView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text("Tips")),
+      appBar: AppBar(title: const Text("Tip")),
       body: const Text("Not Found Page")
           .fontSize(24)
           .textColor(TWColors.zinc.shade800)
