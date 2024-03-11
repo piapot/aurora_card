@@ -24,20 +24,29 @@ class HomeController extends GetxController {
     super.onClose();
   }
 
-  void changeToolIndex(int index) {
+  void changeToolIndex(BuildContext context, int index) {
     bottomBarIndex.value = index;
-    Get.bottomSheet(
-      BottomNavigationBarConstant.sheetItems[index]
-          .toColumn(
-            mainAxisSize: MainAxisSize.min,
-            mainAxisAlignment: MainAxisAlignment.start,
-            crossAxisAlignment: CrossAxisAlignment.start,
-          )
-          .padding(horizontal: 20, vertical: 32)
-          .fractionallySizedBox(widthFactor: 1),
-      ignoreSafeArea: false,
+
+    showModalBottomSheet(
+      context: context,
+      enableDrag: true,
+      isDismissible: true,
+      isScrollControlled: true,
+      useRootNavigator: true,
       backgroundColor: TWColors.zinc.shade50,
       barrierColor: Colors.transparent,
+      builder: (context) {
+        return BottomNavigationBarConstant.sheetItems[index]
+            .toColumn(
+              mainAxisSize: MainAxisSize.min,
+              mainAxisAlignment: MainAxisAlignment.start,
+              crossAxisAlignment: CrossAxisAlignment.start,
+            )
+            .padding(horizontal: 20, bottom: 48)
+            .fractionallySizedBox(widthFactor: 1);
+      },
     );
   }
+
+  final toggleState = false.obs;
 }

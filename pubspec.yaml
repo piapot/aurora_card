@@ -8,8 +8,10 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  flutter_hooks: ^0.20.5
   flutter_tailwind_colors: ^0.0.2
   get: ^4.6.6
+  qr_flutter: ^4.1.0
   styled_widget: ^0.4.1
 
 dev_dependencies:

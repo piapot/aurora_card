@@ -13,4 +13,8 @@ final themeData = ThemeData(
     shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(9999)),
   ),
   bottomSheetTheme: const BottomSheetThemeData(showDragHandle: true),
+  textSelectionTheme: TextSelectionThemeData(
+    selectionColor: TWColors.blue.shade300,
+    selectionHandleColor: TWColors.blue,
+  ),
 );

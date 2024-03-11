@@ -6,5 +6,6 @@ words:
   - cupertino
   - getx
   - iconify
+  - unfocus
 ignoreWords: []
 import: []
